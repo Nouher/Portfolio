@@ -106,7 +106,7 @@ export const ImageProjectData=[
         id:1,
         name:"Ecommerce Website",
         url:img1,
-        link:'https://adoring-khorana-d97a3b.netlify.app/'
+        link:'https://shophz.netlify.app/'
     },
     {
         id:2,

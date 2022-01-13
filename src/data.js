@@ -96,7 +96,7 @@ export const SocialMedia=[
     {
         id:1,
         name:'github',
-        link:'https://www.linkedin.com/in/hamza-nouher-839b08201/',
+        link:'https://github.com/Nouher',
         logo:githubSvg
     },
 ]

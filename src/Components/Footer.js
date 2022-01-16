@@ -25,7 +25,7 @@ const Item=styled.div`
 const Footer = () => {
     return (
         <Container>
-            <Item>Copyright © 2021 Company Name . All rights reserved</Item>
+            <Item>Copyright © 2021 NHR . All rights reserved</Item>
             <Item>Designed by <span style={{color:"#007bff"}}>Me</span></Item>
         </Container>
     )

@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import { ImageProjectData } from '../data'
 import { mobile } from '../Responsive'
-import Footer from '../Components/Footer';
 
     
 const Container=styled.div`

@@ -1,8 +1,3 @@
-import facebookSvg from './assets/facebook.svg'
-import instagramSvg from './assets/instagram.svg'
-import twitterSvg from './assets/twitter.svg'
-import linkedinSvg from './assets/linkedin.svg'
-import githubSvg from './assets/github.svg'
 import img1 from './assets/project/project-image01.png'
 import img2 from './assets/project/project-image02.png'
 import img3 from './assets/project/project-image03.png'
@@ -68,38 +63,6 @@ export const ExperiencesItems=[
    
 ]
 
-export const SocialMedia=[
-    {
-        id:1,
-        name:'facebook',
-        link:'https://www.facebook.com/HamzaNouher/',
-        logo:facebookSvg
-    },
-    {
-        id:1,
-        name:'instagram',
-        link:'https://www.instagram.com/hamzano_oher/',
-        logo:instagramSvg
-    },
-    {
-        id:1,
-        name:'twitter',
-        link:'https://twitter.com/HamzaNouher',
-        logo:twitterSvg
-    },
-    {
-        id:1,
-        name:'linkedin',
-        link:'https://www.linkedin.com/in/hamza-nouher-839b08201/',
-        logo:linkedinSvg
-    },
-    {
-        id:1,
-        name:'github',
-        link:'https://github.com/Nouher',
-        logo:githubSvg
-    },
-]
 
 export const ImageProjectData=[
     {
@@ -112,18 +75,18 @@ export const ImageProjectData=[
         id:2,
         name:"Management Application",
         url:img2,
-        link:'#'
+        link:''
     },
     {
         id:3,
         name:"Management Application",
         url:img3,
-        link:'#'
+        link:''
     },
     {
         id:4,
         name:"Management Application",
         url:img4,
-        link:'#'
+        link:''
     },
 ]

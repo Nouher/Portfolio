@@ -1,22 +1,34 @@
 import React from 'react'
-import About from './Components/About';
-import Features from './Components/Features';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import Home from './pages/Home';
+import About from './pages/About';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
 import Navbar from './Components/Navbar';
-import Projects from './Components/Projects';
-import Contact from './Components/Contact';
-import Footer from './Components/Footer';
-
 
 function App() {
   return (
-    <div >
-     <Navbar/>
-     <About/> 
-     <Projects/>
-     <Features/>
-     <Contact/>
-      <Footer/> 
-    </div>
+    <Router>
+        <Navbar/>
+        <Switch>
+          <Route exact path='/' >
+            <Home/>
+          </Route>
+          <Route path='/about' >
+            <About/>
+          </Route>
+          <Route path='/projects' >
+            <Projects/>
+          </Route>
+          <Route path='/contact' >
+            <Contact/>
+          </Route>
+        </Switch> 
+    </Router>
   );
 }
 

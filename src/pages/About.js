@@ -7,7 +7,8 @@ const Container=styled.div`
     display: flex;
     margin-left: 100px;
     height: 100vh;
-    ${mobile({height:'auto',flexDirection:"column",marginLeft:"0",width:"100vw",padding:"20px",boxSizing:"border-box"})};
+    overflow: hidden;
+    ${mobile({height:'auto',flexDirection:"column",marginLeft:"0",width:"100vw",padding:"20px",boxSizing:"border-box",paddingTop:60})};
 
 `
 const Experiences=styled.div`
@@ -19,6 +20,8 @@ const Experiences=styled.div`
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
+        width: '100vw',
+        overflow:'hidden'
         })};
 
     
@@ -35,6 +38,9 @@ const InfosContainer=styled.div`
     position: absolute;
     left: 38px;
     }
+    ${mobile({
+       width: '80%',
+        })};
     
     `
 
@@ -57,7 +63,7 @@ const TitleS=styled.h3`
     margin-bottom: 0.5rem;
     margin-top: 0;
     ${mobile({
-        fontSize:"20px",
+        fontSize:18,
     })};
     
     
@@ -75,12 +81,21 @@ const Desc=styled.div`
     `
 const Educations=styled.div`
     flex: 1;  
+    ${mobile({
+        marginBottom:"20px",
+        flexDirection:'column',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        width: '100vw',
+        overflow:'hidden'
+        })};
      
 `
 const Title=styled.h1`
-    margin: 100px 0;
+    padding-top: 100px;
     color:var(--dark);
-    ${mobile({fontSize:"40px",textAlign:"center",margin:"50px 0"})};
+    ${mobile({fontSize:"40px",padding:0,textAlign:"center",margin:"50px 0"})};
 
 `
 const Info=styled.div`
@@ -89,10 +104,26 @@ const Info=styled.div`
     max-width: 432px;
     margin-left: 6em;
 `
+const Circle=styled.div`
+    background: #C1DF00;
+    border-radius:50%;
+    top: 0;
+    left: 400px;
+    z-index: 0;
+    position: absolute;
+    width: 720px;
+    height: 720px;
+    mix-blend-mode: multiply;
+    filter:blur(300px);
+    opacity: .3;
+    ${mobile({left:0,width:'100vw',height:'120vh'})};
+    
+`
 
 const Features = () => {
     return (
-        <Container id='resume'>
+        <Container>
+            <Circle/>
             <Experiences>
                 <Title>Experiences</Title>
                 {ExperiencesItems.map(item=>(
